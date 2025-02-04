@@ -17,7 +17,7 @@ def main():
         image=Image.open(image)
 
         # Load the model
-        model = load_model("model/keras_Model.h5", compile=False)
+        model = load_model("model/keras_model.h5", compile=False)
         print(model) 
 
         class_names = open("model/labels.txt", "r",encoding='utf-8').readlines()
